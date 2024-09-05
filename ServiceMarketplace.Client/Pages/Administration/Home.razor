@@ -1,0 +1,590 @@
+﻿@page "/administration"
+@layout AdminLayout
+
+
+<!-- Page Content Holder -->
+<div id="content">
+
+    <div class="content-admin-main">
+
+        <div class="admin-top-area d-flex flex-wrap justify-content-between m-b30 align-items-center">
+
+            <div class="admin-left-area">
+                <a class="nav-btn-admin d-flex justify-content-between align-items-center" id="sidebarCollapse">
+                    <span class="nav-btn-text">Dashboard Menu</span>
+                    <span class="fa fa-reorder"></span>
+                </a>
+            </div>
+
+            <div class="admin-area-mid">
+                <div class="admin-area-heading">
+                    <span>Your Tariff Plan : </span>
+                    <strong>Extended <i class="fa fa-caret-down"></i></strong>
+                </div>
+                <div class="admin-area-content">you Are on Extended . Use link bellow to view details or upgrade.Details </div>
+
+            </div>
+
+            <div class="admin-right-area">
+                <div class="pro-pic-info-wrap d-flex">
+                    <div class="pro-pic-box">
+                        <img src="images/user.jpg" alt="" />
+                    </div>
+                    <div class="pro-pic-info">
+                        <strong>David Wood</strong>
+                        <span>Designer</span>
+                    </div>
+                    <span class="feather-icon has-toltip">
+                        <i class="feather-power"></i>
+                        <span class="header-toltip">Notification</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="aon-provi-tabs d-flex flex-wrap justify-content-between">
+            <div class="aon-provi-left">
+                <ul class="aon-provi-links">
+                    <li><a href="#aon-about-panel">About</a></li>
+                    <li><a href="#aon-contact-panel">Contact</a></li>
+                    <li><a href="#aon-adress-panel">Adress</a></li>
+                    <li><a href="#aon-serviceArea-panel">Service Area</a></li>
+                    <li><a href="#aon-servicePer-panel">Service Perform</a></li>
+                    <li><a href="#aon-socialMedia-panel">Social Media</a></li>
+                    <li><a href="#aon-passUpdate-panel">Password</a></li>
+                    <li><a href="#aon-category-panel">Category</a></li>
+                    <li><a href="#aon-amenities-panel">Amenities</a></li>
+                    <li><a href="#aon-languages-panel">Languages</a></li>
+                    <li><a href="#aon-gallery-panel">Gallery</a></li>
+                    <li><a href="#aon-video-panel">Video</a></li>
+                </ul>
+            </div>
+            <div class="aon-provi-right">
+            </div>
+        </div>
+
+
+        <div class="aon-admin-heading">
+            <h4>Edit Profile</h4>
+        </div>
+
+        <div class="card aon-card">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-user"></i> About me</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="aon-staff-avtar">
+                            <div class="aon-staff-avtar-header">
+                                <div class="aon-pro-avtar-pic ">
+                                    <img src="images/pic-large.jpg" alt="">
+                                    <button class="admin-button has-toltip">
+                                        <i class="fa fa-camera"></i>
+                                        <span class="header-toltip">Upload Avtar</span>
+                                        <input type="file" name="avtar">
+                                    </button>
+                                </div>
+                                <div class="aon-pro-cover-wrap">
+                                    <div class="aon-pro-cover-pic">
+                                        <img src="images/banner/job-banner.jpg" alt="">
+                                    </div>
+                                    <div class="admin-button-upload">
+                                        <span>Upload Cover Image</span>
+                                        <input type="file" name="avtar">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="aon-staff-avtar-footer">
+                                <h4 class="aon-staff-avtar-title">Upload Your Avatar</h4>
+                                <ul>
+                                    <li>Min width and height: <span>600 x 600 px</span></li>
+                                    <li>Max Upload Size: <span>512MB</span></li>
+                                    <li>Extensions: <span>JPEG,PNG,GIF,PNG</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <div class="aon-inputicon-box">
+                                        <input class="form-control sf-form-control" name="company_name" type="text">
+                                        <i class="aon-input-icon fa fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Company Name</label>
+                                    <div class="aon-inputicon-box">
+                                        <input class="form-control sf-form-control" name="company_name" type="text">
+                                        <i class="aon-input-icon fa fa-building-o"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <div class="aon-inputicon-box">
+                                        <input class="form-control sf-form-control" name="company_name" type="text">
+                                        <i class="aon-input-icon fa fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <div class="aon-inputicon-box">
+                                        <input class="form-control sf-form-control" name="company_name" type="text">
+                                        <i class="aon-input-icon fa fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 breck-w1400">
+                                <div class="form-group">
+                                    <label>Gender</label>
+                                    <div class="aon-inputicon-box">
+
+                                        <div class="radio-inline-box sf-radio-check-row">
+
+                                            <div class="checkbox sf-radio-checkbox sf-radio-check-2 sf-raChe-6">
+                                                <input id="any111" name="abc" value="five" type="radio">
+                                                <label for="any111">Male</label>
+                                            </div>
+                                            <div class="checkbox sf-radio-checkbox sf-radio-check-2 sf-raChe-6">
+                                                <input id="body111" name="abc" value="five" type="radio">
+                                                <label for="body111">Female</label>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 breck-w1400">
+                                <div class="form-group">
+                                    <label>TagLine</label>
+                                    <div class="aon-inputicon-box">
+                                        <input class="form-control sf-form-control" name="company_name" type="text">
+                                        <i class="aon-input-icon fa fa-tags"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Biography</label>
+                                    <div class="editer-wrap">
+                                        <div class="editer-textarea">
+                                            <textarea class="form-control" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-contact-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-envelope"></i> Contact Detail</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Mobile</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-phone"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Alt. Mobile</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-mobile"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Skype</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-skype"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Website</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-globe"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-adress-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-address-card"></i> Address</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Location</label>
+                            <div class="grayscle-area address-area-map">
+                                <iframe height="460" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8534521658976!2d-118.2533646842856!3d34.073270780600225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6fd9829c6f3%3A0x6ecd11bcf4b0c23a!2s1363%20Sunset%20Blvd%2C%20Los%20Angeles%2C%20CA%2090026%2C%20USA!5e0!3m2!1sen!2sin!4v1620815366832!5m2!1sen!2sin"></iframe>
+                            </div>
+
+                            <button class="button rwmb-map-goto-address-button btn btn-primary m-t20" value="address"> Find Address on Map </button>
+                            <p>Note: This will load your address on map and fillup latitude and longitude</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Address</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-globe"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Apt/Suite #</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>City</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>State</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Postal Code</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Country</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Latitude</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-street-view"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Longitude</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-street-view"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-serviceArea-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-building-o"></i> Radius for Service Area</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="sf-range-slider sf-range-w250">
+                                <div class="sf-range-slider-control">Radius: <span>45Km</span></div>
+                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-servicePer-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-building-o"></i> Service to Perform At</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+
+
+                    <div class="col-md-12">
+                        <div class="aon-inputicon-box">
+
+                            <div class="radio-inline-box service-perform-list">
+
+                                <div class="checkbox sf-radio-checkbox sf-radio-check-2">
+                                    <input id="loc11" name="abc" value="five" type="radio">
+                                    <label for="loc11">My Location</label>
+                                </div>
+                                <div class="checkbox sf-radio-checkbox sf-radio-check-2">
+                                    <input id="loc22" name="abc" value="five" type="radio">
+                                    <label for="loc22">Customer Location</label>
+                                </div>
+                                <div class="checkbox sf-radio-checkbox sf-radio-check-2">
+                                    <input id="loc33" name="abc" value="five" type="radio">
+                                    <label for="loc33">Both</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-socialMedia-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-share-alt"></i> Social Media</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Facebook</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Twitter</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Linkedin</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label> Pinterest</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-pinterest"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Digg</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-digg"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Instagram</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-passUpdate-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-lock"></i> Password Update</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Repeat Password</label>
+                            <div class="aon-inputicon-box">
+                                <input class="form-control sf-form-control" name="company_name" type="text">
+                                <i class="aon-input-icon fa fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p>Enter same password in both fields. Use an uppercase letter and a number for stronger password.</p>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-category-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-list-alt"></i> Category</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Category</label>
+                            <div class="alert alert-info">Currently you can choose 10 categories. You can increase it by upgrade membership plan</div>
+                            <select class="selectpicker" multiple data-live-search="true">
+                                <option>Laoundry</option>
+                                <option>Cab Services</option>
+                                <option>Car Dealer</option>
+                                <option>Event Organizer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Primary Category</label>
+                            <div class="radio-inline-box">
+
+                                <div class="checkbox sf-radio-checkbox">
+                                    <input id="lau1" name="abc" value="five" type="radio">
+                                    <label for="lau1">Laundry</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p>Enter same password in both fields. Use an uppercase letter and a number for stronger password.</p>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-amenities-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-shield"></i> Amenities</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Amenities</label>
+                            <select class="selectpicker" multiple data-live-search="true">
+                                <option>Laoundry</option>
+                                <option>Cab Services</option>
+                                <option>Car Dealer</option>
+                                <option>Event Organizer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-languages-panel">
+            <div class="card-header aon-card-header"><h4><i class="fa fa-language"></i> Languages</h4></div>
+            <div class="card-body aon-card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Languages</label>
+                            <select class="selectpicker" multiple data-live-search="true">
+                                <option>Laoundry</option>
+                                <option>Cab Services</option>
+                                <option>Car Dealer</option>
+                                <option>Event Organizer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-gallery-panel">
+            <div class="card-header aon-card-header">
+                <h4><i class="fa fa-image"></i> Gallery Images</h4>
+            </div>
+
+            <div class="card-body aon-card-body">
+                <form action="upload.php" class="dropzone dropzone-custom"></form>
+            </div>
+        </div>
+
+        <div class="card aon-card" id="aon-video-panel">
+            <div class="card-header aon-card-header">
+                <h4><i class="fa fa-video-camera"></i> Video Upload</h4>
+            </div>
+
+            <div class="card-body aon-card-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Insert YouTube or Vimeo or Facebook Vedio Url" aria-label="Recipient's username">
+                    <div class="input-group-append">
+                        <button class="btn admin-button" type="button">Priview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<Scripts />
