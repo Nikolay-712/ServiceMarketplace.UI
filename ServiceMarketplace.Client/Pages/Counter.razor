@@ -1,3 +1,4 @@
 ﻿@page "/counter"
+@attribute [Authorize(Roles = AdminRoleName)]
 
-
+@inject IHttpCategoryClient _categoryClient;
